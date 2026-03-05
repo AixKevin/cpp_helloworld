@@ -1,0 +1,9 @@
+# 忽略 CMake 产生的构建文件夹
+build/
+out/
+bin/
+.vscode/
+
+# 忽略系统文件
+.DS_Store
+Thumbs.db
