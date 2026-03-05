@@ -1,7 +1,7 @@
 cmake_minimum_required(VERSION 3.10)
 
 # 1. 项目名称（以后每次新建项目，只改这一行即可！）
-project(CppProjectTemplate VERSION 1.0)
+project(function_template VERSION 1.0)
 
 # 2. 设置 C++ 标准 (推荐 C++17 或 20)
 set(CMAKE_CXX_STANDARD 23)
@@ -9,7 +9,7 @@ set(CMAKE_CXX_STANDARD_REQUIRED True)
 
 # 3. 自动扫描 src 目录下的所有 .cpp 文件
 # (注意：这是为了方便个人开发，工业级大项目通常建议手动列出)
-file(GLOB_RECURSE SOURCES "src/*.cpp")
+file(GLOB_RECURSE SOURCES "src/sub.cpp")
 
 # 4. 自动将 include 目录加入头文件搜索路径
 include_directories(include)
