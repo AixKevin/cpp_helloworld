@@ -111,7 +111,7 @@ namespace MonsterGenerator
     }
     Monster generate()
     {
-        return Monster{static_cast<Monster::Type>(Random::get(0, 7)), getName(Random::get(0, 5)), getRoar(Random::get(0, 5)), Random::get(0, 100)};
+        return Monster{static_cast<Monster::Type>(Random::get(0, Monster::maxMonsterTypes - 1)), getName(Random::get(0, 5)), getRoar(Random::get(0, 5)), Random::get(1, 100)};
     }
 } // namespace MonsterGenerator
 
